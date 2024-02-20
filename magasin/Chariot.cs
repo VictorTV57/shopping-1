@@ -40,9 +40,9 @@ public class Chariot
     {
         double res=0;
         int i;
-        for (i = 0; i < this.produits.Length; i++)
+        foreach (Produit p in this.produits)
         {
-            res = res + this.produits[i].getTVA().getTTC(this.produits[i]);
+            res = res + p.CalculTTC();
         }
         return res;
     }

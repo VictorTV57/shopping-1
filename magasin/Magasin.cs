@@ -30,6 +30,10 @@ public class Produit
         {
         return this.tva;
         }
+    public double CalculTTC ()
+    {
+        res = this.tva.getTTC(this.prix);
+    }
 
 
 
